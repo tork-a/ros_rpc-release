@@ -1,0 +1,9 @@
+ros-indigo-ros-rpc (0.0.1-0saucy) saucy; urgency=high
+
+  * Initial release into ROS public repository.
+  * Initial commit.
+  * Contributors: Isaac I.Y. Saito
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Thu, 19 Jan 2017 08:00:00 -0000
+
+
