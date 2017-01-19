@@ -1,0 +1,13 @@
+Source: ros-indigo-ros-rpc
+Section: misc
+Priority: extra
+Maintainer: TORK <dev@opensource-robotics.tokyo.jp>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-rostest
+Homepage: http://wiki.ros.org/ros_rpc
+Standards-Version: 3.9.2
+
+Package: ros-indigo-ros-rpc
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-actionlib, ros-indigo-genpy, ros-indigo-geometry-msgs, ros-indigo-rospy, ros-indigo-std-msgs
+Description: This package provides abstract RPC (Remote Procedure Call) structure for higher level of robot operations for the ROS-based robots.
+ Some ROS-based robots come with higher level of convenient operation interface (e.g. often written in Python) where robot operators can call complicated tasks by a single command. &quot;RPC&quot; here enables interacting with those commands via ROS Topic/Service/Action from remote nodes.
