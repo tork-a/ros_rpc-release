@@ -21,5 +21,5 @@ tracks:
     release_tag: :{version}
     ros_distro: indigo
     vcs_type: git
-    vcs_uri: https://github.com/tork-a/ros_rpc.git
+    vcs_uri: https://github.com/tork-a/tork_rpc.git
     version: :{auto}
