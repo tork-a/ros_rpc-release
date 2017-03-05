@@ -15,20 +15,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import math
-import numpy
-import random
-import os
-import re
-import time
-import tempfile
 import unittest
 
 from geometry_msgs.msg import Pose
+import rospy
 
-from ros_rpc.sample import SampleRosRpc
+from tork_rpc_util.sample import SampleRosRpc
 
-PKG = 'ros_rpc'
+PKG = 'tork_rpc_util'
 
 
 class TestRosRpc(unittest.TestCase):
