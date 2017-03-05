@@ -1,6 +1,19 @@
-=====================
-tork_rpc_util
-=====================
+========================================================================
+tork_rpc_util (RPC (Remote Procedure Call)) ROS package
+========================================================================
 
-See [tork_rpc_util/README.rst](https://github.com/tork-a/tork_rpc_util/blob/master/tork_rpc_util/README.rst).
- 
+Install
+========
+
+Install from binary (recommended)
+---------------------------------
+
+(Optional) Source install
+------------------------------
+
+TBD
+
+Run RPC nodes on simulation
+----------------------------
+
+EoF
