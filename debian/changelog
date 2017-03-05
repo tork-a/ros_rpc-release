@@ -1,0 +1,20 @@
+ros-indigo-tork-rpc-util (0.0.3-0trusty) trusty; urgency=high
+
+
+
+ -- Keio University Yamaguchi Lab <dev@opensource-robotics.tokyo.jp>  Sat, 04 Mar 2017 08:00:00 -0000
+
+ros-indigo-tork-rpc-util (0.0.2-0trusty) trusty; urgency=high
+
+  * Package renamed.
+
+ -- Keio University Yamaguchi Lab <dev@opensource-robotics.tokyo.jp>  Sat, 04 Mar 2017 08:00:00 -0000
+
+ros-indigo-tork-rpc-util (0.0.1-0trusty) trusty; urgency=high
+
+  * Initial release into ROS public repository.
+  * Contributors: Isaac I.Y. Saito
+
+ -- Keio University Yamaguchi Lab <dev@opensource-robotics.tokyo.jp>  Thu, 19 Jan 2017 08:00:00 -0000
+
+
