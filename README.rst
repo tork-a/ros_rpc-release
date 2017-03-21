@@ -1,56 +1,22 @@
------------------------------------------------------------------
-tork_rpc, RPC (Remote Procedure Call) for ROS-based robot
------------------------------------------------------------------
-
-.. contents:: Table of Contents
-   :depth: 2
+----------------------------------------------------------------
+tork_rpc_util RPC (Remote Procedure Call) ROS package
+----------------------------------------------------------------
 
 Introduction
 ------------
 
-This package suite provides abstract RPC (Remote Procedure Call) structure for higher level of robot operations for the ROS-based robots.
+This package provides abstract RPC (Remote Procedure Call) structure for higher level of robot operations for the ROS-based robots.
 
 Some ROS-based robots come with higher level of convenient operation interface (e.g. often written in Python) where robot operators can call complicated tasks by a single command. "RPC" here enables interacting with those commands via ROS Topic/Service/Action from remote nodes.
 
-Existing applications of tork_rpc
-----------------------------------
+A few applications of this package can be found at:
 
-+-------------------------------+-----------------------+------------+
-| Robot name and manufacturer   | RPC package location  | RPC readme |
-+===============================+=======================+============+
-| `Baxter (Research Robot) <http://www.ros.org/news/2012/09/rethink-ros.html>`_, Rethink Robotics. | `baxter_app_rpc <https://github.com/tork-a/baxter_app_rpc>`_ | `README.rst <https://github.com/tork-a/baxter_app_rpc/blob/master/README.rst>`_ |
-+-------------------------------+-----------------------+------------+
-| `Hironx / NEXTAGE Open <http://wiki.ros.org/hironx_rpc>`_, Kawada Robotics. | `hironx_rpc <https://github.com/start-jsk/rtmros_hironx/tree/indigo-devel/hironx_rpc>`_ | `README.rst <https://github.com/start-jsk/rtmros_hironx/tree/indigo-devel/hironx_rpc/README.rst>`_ |
-+-------------------------------+-----------------------+------------+
-| `HSR <http://www.toyota-global.com/innovation/partner_robot/family_2.html>`_, Toyota. | `hsr_rpc <https://git.hsr.io/isao_saito/hsr_rpc>`_ (limited access) | `README.rst <https://git.hsr.io/isao_saito/hsr_rpc/blob/master/README.rst>`_  |
-+-------------------------------+-----------------------+------------+
+* [baxter_app_rpc](http://www.ros.org/news/2012/09/rethink-ros.html) for Baxter.
+* [hironx_rpc](http://wiki.ros.org/hironx_rpc) for Hironx dual-arm co-robot.
+* [Toyota HSR](http://www.toyota-global.com/innovation/partner_robot/family_2.html) (package not available publicly yet).
 
-You can install individual packages above by following each README file.
-
-(Option) Install some apps above
-=================================
-
-If you need app packages, run the following set of commands to semi-automatically install them (assuming ~/cws_rpc with your own catkin workspace path.
-
-NOTE: HSR packages need to be manually installed as of March 2017 due to server access limitation. See its readme to do so.
-
-::
-
-  sudo apt-get install python-catkin-tools python-rosdep python-wstool
-  mkdir -p ~/cws_rpc/src && cd ~/cws_rpc
-  wstool init src
-  wstool merge -t src https://raw.githubusercontent.com/tork-a/tork_rpc/master/tork_rpc_util/.rpc_apps.rosinstall
-  wstool update -t src
-  rosdep install -r -y --from-paths src --ignore-src
-  catkin build
-  source devel/setup.bash
-
-Install tork_rpc
-------------------------
-
-Do the following **ONLY** when you develop your own RPC package based on `tork_rpc`.
-
-If you're just using the existing RPC packages listed above or other, `tork_rpc` will get installed as a dependency.
+Install
+--------
 
 Install from binary (recommended)
 =================================
@@ -63,12 +29,11 @@ Install from binary (recommended)
 =================================
 
 ::
-
   sudo apt-get install python-catkin-tools python-rosdep python-wstool
-  mkdir -p ~/cws_rpc/src
-  cd ~/cws_rpc/src
+  mkdir -p %YOUR_CATKIN_WS%/src
+  cd %YOUR_CATKIN_WS%/src
   git clone https://github.com/tork-a/tork_rpc.git
-  cd ~/cws_rpc
+  cd %YOUR_CATKIN_WS%
   rosdep install -r -y --from-paths src --ignore-src
   catkin build
   source devel/setup.bash
@@ -83,7 +48,7 @@ Tech support
 
 Your contribution in any of the following is appreciated!
 
-* `Report issues <https://github.com/tork-a/tork_rpc/issues>`_
-* Enhancement suggestion `via Github pull request <https://github.com/tork-a/tork_rpc/pulls>`_. 
+* [Report issues](https://github.com/tork-a/tork_rpc/issues)
+* Enhancement suggestion [via Github pull request](https://github.com/tork-a/tork_rpc/pulls). 
 
 EoF
